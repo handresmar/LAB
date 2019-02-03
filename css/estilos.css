@@ -1,0 +1,43 @@
+*{
+
+
+}
+
+.wrap{
+	position: auto;
+	border: solid;
+	padding: 20px;
+}
+
+
+div{
+	border: 1px dotted #ccc;
+	padding: 1px;
+	margin-bottom: 10px;
+}
+form{
+	margin: 20 px;
+	padding: 40 px;
+}
+label{
+	
+	font-size: 14px;
+	display: inline-block;
+	padding: 2 px;
+	box-sizing: border-box;
+}
+
+input{
+	margin-bottom: 20px;
+}
+
+textarea{
+	display: inline-block;
+	padding: 10px;
+}
+
+textarea[.obs,.acc]{
+	display: block;
+	resize: vertical;
+	padding: 20px;
+}
