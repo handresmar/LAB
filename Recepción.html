@@ -1,127 +1,137 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-	<meta charset="utf-8">
-	<title>Recepción de muestras</title>
-	<link rel="stylesheet" type="text/css" href="css/estilos.css">
-</head>
-<body>
-	<div class="wrap">
-	
-		<h2>Recepción de muestras de laboratorio</h2>
+	<head>
+		<meta charset="utf-8">
+		<title>Recepción de muestras</title>
+		<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	</head>
 
-		<div class="infoClien">
-			<h3> Información del cliente</h3>
-
-			<form class="cliente">
-
-				<label for="fecha">Fecha: </label>
-				<input type="date" name="fecha" id="fecha">
-
-				<label for="clnt">Cliente: </label>
-				<input type="text" name="clnt" id="clnt">
-				<br>
-				<label for="cot"> Cotización No.: LABE01C</label>
-				<input type="text" name="cot" id="cot">
-				
-				<label for="vrsn">Versión</label>
-				<input type="text" name="vrsn" id="vrsn">
-
-			</form>
-		</div>
-
-		<div class="infoMuest">
-			<h3> Información de la(s) muestra(s)</h3>
-
-
-		</div>
-
-		<div class="insp">
-			<h3> Inspección preliminar</h3>
-
-			<form class="inspccn">
-				<label for="iv">Inspección visual: </label>
-				<input type="radio" name="iv" id="iv"> Sí 
-				<input type="radio" name="iv" id="iv"> No 
-
-				<br>
-
-				<label for="mn">Muestras nuevas: </label>
-				<input type="radio" name="mn" id="mn"> Sí 
-				<input type="radio" name="mn" id="mn"> No
-				
-				<br>
-
-				<label for="man">Manual u hoja de especificaciones: </label>
-				<input type="radio" name="man" id="man"> Sí 
-				<input type="radio" name="man" id="man"> No
-
-				<br>
-
-				<label for="acc">Accesorios: </label>
-				<input type="text" name="acc" id="acc">
-				
-			</form>
-		</div>
-
-		<div class="env">
-			<h3>Información del envío</h3>
-
-			<form>
-				<label for="rem">Remisión: </label>
-				<select name="rem">
-					<option value="-1">Sí</option>
-					<option value="0">No</option>
-					<option value="1">Guía</option>
-				</select>
-
-				<br>
-
-				<label for="emp">Empaque o embalaje: </label>
-				<input type="text" name="emp" id="emp">
-				
-				<br>
-
-				<label for="obs">Observaciones: </label>
-				<input type="text" name="obs" id="obs">
-			</form>
-
+	<body>
+		<section class="wrap">
+			<h1>Recepción de muestras de laboratorio </h2>
+			<h2> Módulo de Alta Tensión - LABE</h3>
 			
-		</div>
+			<div class="infoClien">
+				<h3> Información del cliente</h3>
 
-		<div class="resp">
-			<h3> Responsables</h3>
-			<form>
-				<div class="entr">
+				<form class="cliente">
 
-					<label for="entr">Engrega: </label>
+					<label for="fecha">Fecha: </label>
+					<input type="date" name="fecha" id="fecha">
 
-					<input type="text" name="nomEntr" id="nomEntr" placeholder="Nombres">
+					<label for="clnt">Cliente: </label>
+					<input type="text" name="clnt" id="clnt">
+					<br>
+					<label for="cot"> Cotización No.: LABE01C</label>
+					<input type="text" name="cot" id="cot">
+					
+					<label for="vrsn">Versión</label>
+					<input type="text" name="vrsn" id="vrsn">
 
-					<input type="text" name="entr" id="docEntr"
-					placeholder="Documento">
-				</div>
+				</form>
+			</div>
 
-				<div class="rec">
-					<label for="rec">Recibe: </label>
-					<input type="text" name="rec" id="nomRec" placeholder="Nombre">
-				</div>	
-			</form>
+			<div class="infoMuest">
+				<h3> Información de la(s) muestra(s)</h3>
 
-		</div>
-		<div class="reg">
-			<h3>Registro Fotográfico</h3>
-			<form>
-				<label for="adj">Adjuntar archivos: </label>
-				<input type="file" name="adj" id="adj" accept=".jpeg,.jpg,.png" multiple>
-			</form>
-		</div>
-		<div class="pdf">
-			<input type="button" value="Generar PDF" name="">
-		</div>
-	</div>
+				<table class="table">
+					<tr>
+						<td><h4>Código</h4></td>
+						<td><h4>Típo de muestra</h4></td>
+						<td><h4>Descripción</h4></td>
+						<td><h4>Cant</h4></td>
+					</tr>
 
+				</table>
 
+				<section class="pdf">
+					<input type="button" value="Agregar" name="add" id="add">
+				</section>
+			</div>
 
-</body>
+			<div class="insp">
+				<h3> Inspección preliminar</h3>
+
+				<form class="inspcn">
+					<label for="iv">Inspección visual: </label>
+					<input type="radio" name="iv" id="iv"> Sí 
+					<input type="radio" name="iv" id="iv"> No 
+
+					<br>
+
+					<label for="mn">Muestras nuevas: </label>
+					<input type="radio" name="mn" id="mn"> Sí 
+					<input type="radio" name="mn" id="mn"> No
+					
+					<br>
+
+					<label for="man">Manual u hoja de especificaciones: </label>
+					<input type="radio" name="man" id="man"> Sí 
+					<input type="radio" name="man" id="man"> No
+
+					<br>
+
+					<label for="acc">Accesorios: </label>
+					<textarea name="acc" id="acc" placeholder="Describa los accesorios"></textarea>
+					
+				</form>
+			</div>
+
+			<div class="env">
+				<h3>Información del envío</h3>
+
+				<form>
+					<label for="rem">Remisión: </label>
+					<select name="rem">
+						<option value="-1">Sí</option>
+						<option value="0">No</option>
+						<option value="1">Guía</option>
+					</select>
+
+					<br>
+
+					<label for="emp">Empaque o embalaje: </label>
+					<input type="text" name="emp" id="emp">
+					
+					<br>
+
+					<label for="obs">Observaciones: </label>
+					<textarea name="obs" id="obs" placeholder="Observaciones adicionales sobre el envío o la muestra"></textarea>
+				</form>
+
+				
+			</div>
+
+			<div class="resp">
+				<h3> Responsables</h3>
+				<form>
+					<section class="entr">
+
+						<label for="entr">Engrega: </label>
+
+						<input type="text" name="nomEntr" id="nomEntr" placeholder="Nombres">
+
+						<input type="text" name="entr" id="docEntr"
+						placeholder="Documento">
+					</section>
+
+					<section class="rec">
+						<label for="rec">Recibe: </label>
+						<input type="text" name="rec" id="nomRec" placeholder="Nombre">
+					</section>	
+				</form>
+
+			</div>
+			<div class="reg">
+				<h3>Registro Fotográfico</h3>
+				<form>
+					<label for="adj">Adjuntar archivos: </label>
+					<input type="file" name="adj" id="adj" accept=".jpeg,.jpg,.png" multiple>
+				</form>
+			</div>
+			<div class="pdf">
+				<input type="button" value="Generar PDF" name="">
+			</div>
+		</section>
+	</body>
 </html>
