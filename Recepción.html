@@ -45,7 +45,7 @@
 				</table>
 
 				<section class="pdf">
-					<input type="button" value="Agregar" name="add" id="add">
+					<input type="button" value="Agregar Muestra" name="add" id="add">
 				</section>
 			</div>
 
@@ -81,17 +81,16 @@
 				<h3>Información del envío</h3>
 
 				<form>
+
+					<label for="emp">Empaque o embalaje: </label>
+					<input type="text" name="emp" id="emp">
 					<label for="rem">Remisión: </label>
+					
 					<select name="rem">
 						<option value="-1">Sí</option>
 						<option value="0">No</option>
 						<option value="1">Guía</option>
 					</select>
-
-					<br>
-
-					<label for="emp">Empaque o embalaje: </label>
-					<input type="text" name="emp" id="emp">
 					
 					<br>
 
@@ -109,7 +108,7 @@
 
 						<label for="entr">Engrega: </label>
 
-						<input type="text" name="nomEntr" id="nomEntr" placeholder="Nombres">
+						<input type="text" name="entr" id="nomEntr" placeholder="Nombres">
 
 						<input type="text" name="entr" id="docEntr"
 						placeholder="Documento">

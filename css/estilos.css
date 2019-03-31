@@ -45,7 +45,15 @@ input, textarea{
 	margin-bottom: 5px;
 	padding: 3px;
 	box-sizing: border-box;
-	}
+	margin-left: 3px;
+	margin-right: 3px;
+	background: #fbffd3;
+	font-size: 15px;
+}
+
+input:focus, textarea:focus{
+	border: 1px solid #DC143C;	
+}
 
 textarea{
 	resize: none;
@@ -53,8 +61,41 @@ textarea{
 	height: 80px;
 }
 
-table {
+table, table td {
 	margin-right: auto;
-	margin-left: auto; 
+	margin-left: auto;
+	text-align: center;
+	border:1px solid #ccc;
+	border-collapse: collapse;
+	padding: 4px;
+	max-width: 800px;
+}
+input[type="button"]{
+	background: #a5a4a4;
+
+	border-style: double #fff;
+	border-width: 1px;
+	border-radius: 5px;
+
+	width: auto;
+
+	margin-bottom:0px;
+	height: 30px;
+	font-weight: bold;
+	font-size: 15px;
+	color:#fff;
+	
+	
+}
+input[type="button"]:hover{
+	cursor: pointer;
+	background: #3399ff;
 }
 
+input[name="entr"], input[name="rec"]{
+	width:95%;
+}
+section[class="entr"], section[class="rec"] {
+	width: 49%;
+	display: inline-table;
+}
