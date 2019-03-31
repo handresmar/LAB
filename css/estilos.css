@@ -41,7 +41,17 @@ h4{
 	font-style: oblique;
 }
 
-input, textarea{
+input[name="clnt"]{
+	width: 52.2%;
+}
+input[name="cot"]{
+	width: 80px;
+}
+input[name="vrsn"]{
+	width: 35px;
+}
+
+input, textarea, select{
 	margin-bottom: 5px;
 	padding: 3px;
 	box-sizing: border-box;
@@ -70,6 +80,11 @@ table, table td {
 	padding: 4px;
 	max-width: 800px;
 }
+label{
+	margin-left: 3px;
+}
+
+
 input[type="button"]{
 	background: #a5a4a4;
 
@@ -98,4 +113,14 @@ input[name="entr"], input[name="rec"]{
 section[class="entr"], section[class="rec"] {
 	width: 49%;
 	display: inline-table;
+}
+section[class="rd"]{
+	width: 20%;
+	text-align: center;
+	display: inline-table;
+}
+
+input[name="emp"]{
+	width: 60%;
+
 }

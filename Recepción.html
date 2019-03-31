@@ -17,16 +17,21 @@
 				<form class="cliente">
 
 					<label for="fecha">Fecha: </label>
-					<input type="date" name="fecha" id="fecha">
-
-					<label for="clnt">Cliente: </label>
-					<input type="text" name="clnt" id="clnt">
 					<br>
-					<label for="cot"> Cotización No.: LABE01C</label>
+					<input type="date" name="fecha" id="fecha">
+					<br>
+						
+					<label for="clnt">Cliente: </label>
+					<br>
+					<input type="text" name="clnt" id="clnt">
+
+					<label for="cot"> Cotización No.: LABE01C
+					</label>
 					<input type="text" name="cot" id="cot">
-					
 					<label for="vrsn">Versión</label>
 					<input type="text" name="vrsn" id="vrsn">
+			
+
 
 				</form>
 			</div>
@@ -53,22 +58,28 @@
 				<h3> Inspección preliminar</h3>
 
 				<form class="inspcn">
+					<section class="rd">
 					<label for="iv">Inspección visual: </label>
+					<br>
 					<input type="radio" name="iv" id="iv"> Sí 
 					<input type="radio" name="iv" id="iv"> No 
-
+					</section>
 					<br>
 
+					<section class="rd">
 					<label for="mn">Muestras nuevas: </label>
+					<br>
 					<input type="radio" name="mn" id="mn"> Sí 
 					<input type="radio" name="mn" id="mn"> No
-					
+					</section>
 					<br>
 
-					<label for="man">Manual u hoja de especificaciones: </label>
+					<section class="rd">
+					<label for="man">Manual o especificaciones: </label>
+					<br>
 					<input type="radio" name="man" id="man"> Sí 
 					<input type="radio" name="man" id="man"> No
-
+					</section>
 					<br>
 
 					<label for="acc">Accesorios: </label>
@@ -84,8 +95,8 @@
 
 					<label for="emp">Empaque o embalaje: </label>
 					<input type="text" name="emp" id="emp">
-					<label for="rem">Remisión: </label>
 					
+					<label for="rem">Remisión: </label>
 					<select name="rem">
 						<option value="-1">Sí</option>
 						<option value="0">No</option>
