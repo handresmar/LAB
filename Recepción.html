@@ -41,12 +41,13 @@
 				<h3> Información de la(s) muestra(s)</h3>
 
 				<table class="sampList" id="sampList">
-					<tr>
+					<tr class="head">
 						<td><h4>Código</h4></td>
 						<td><h4>Típo de muestra</h4></td>
 						<td><h4>Descripción</h4></td>
 						<td><h4>Cant</h4></td>
 					</tr>
+
 
 				</table>
 
@@ -139,7 +140,7 @@
 			</div>
 
 			<div class="pdf">
-				<input type="button" value="Generar PDF" name="">
+				<input type="button" value="Generar PDF" name="" id="pdfBtn">
 			</div>
 		</section>
 
@@ -148,9 +149,9 @@
 				<a href="#" id="puBtnCer" class="puBtnCer"><i class="fas fa-times"></i></a>
 				<h3>Agregar Muestra</h3>
 				<form action="">
-					<input type="text" name="puCod" class="puCod" placeholder="Código LABE">
-					<input type="text" name="puTipo" class="puTipo" placeholder="Tipo de muestra">
-					<input type="number" name="puCant" class="puCant" placeholder="Cant" min="1">
+					<input type="text" name="puCod" id="puCod" class="puCod" placeholder="Código LABE">
+					<input type="text" name="puTipo" id="puTipo" class="puTipo" placeholder="Tipo de muestra">
+					<input type="number" name="puCant" id="puCant" class="puCant" placeholder="Cant" min="1">
 					<textarea name="des_ppop" id="des_pop" placeholder="Descripción de las muestras"></textarea>
 					<input type="button" name="puAdd" class="puAdd"value="Agregar" id="puAdd" >
 				</form>

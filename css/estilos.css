@@ -178,4 +178,8 @@ input[name="emp"]{
 	position: relative;
 }
 
+.smp:hover{
+	text-decoration: line-through;
+}
+
 
