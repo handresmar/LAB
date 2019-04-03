@@ -25,7 +25,7 @@
 
 	function comprobar(){
 			if (inputCod.value==="" || inputTipo.value==="" || inputCant.value==="" || inputDesc.value===""){
-				alert('Comprelete los espacios');
+				alert('Complete los espacios');
 			} else{
 				addsmp();
 			}
