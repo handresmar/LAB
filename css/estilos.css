@@ -39,6 +39,8 @@ h3{
 }
 h4{
 	font-style: oblique;
+	margin-bottom: 1px;
+	margin-top: 1px;
 }
 
 input[name="clnt"]{
@@ -80,6 +82,7 @@ table, table td {
 	padding: 4px;
 	max-width: 800px;
 }
+
 label{
 	margin-left: 3px;
 }
